@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic CSS for layout and styling */
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Resume Builder</h1>
+        <form id="resumeForm">
+            <div class="form-group">
+                <label for="profileImage">Profile Image</label>
+                <input type="file" id="profileImage" accept="image/*">
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="education">Education</label>
+                <textarea id="education" rows="4" placeholder="Enter your education"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="workExperience">Work Experience</label>
+                <textarea id="workExperience" rows="4" placeholder="Enter your work experience"></textarea>
+            </div>
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+
+        <div class="resume-preview" id="resumePreview">
+            <!-- Dynamic resume will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
